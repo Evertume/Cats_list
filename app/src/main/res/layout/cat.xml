@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat_img"
+        tools:src="@tools:sample/avatars"
+    />
+
+    <TextView
+        android:id="@+id/catName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/catImage"
+        app:layout_constraintTop_toTopOf="@id/catImage"
+        tools:text="Abyssinian" />
+
+    <TextView
+        android:id="@+id/catOrigin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/catName"
+        app:layout_constraintTop_toBottomOf="@id/catName"
+        tools:text="Origin: Southeast Asia" />
+
+    <TextView
+        android:id="@+id/catIntelligence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/catOrigin"
+        app:layout_constraintTop_toBottomOf="@id/catOrigin"
+        tools:text="Intelligence: 5" />
+
+    <TextView
+        android:id="@+id/catLifeExpectancy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/catIntelligence"
+        app:layout_constraintTop_toBottomOf="@id/catIntelligence"
+        tools:text="Life Expectancy: 9-15 years" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
